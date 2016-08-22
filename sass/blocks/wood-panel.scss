@@ -1,0 +1,41 @@
+.wood-panel {
+	background: #fff url("../img/bg/wood-panel-bg.jpg") 0 0 no-repeat;
+    background-size: cover;
+}
+
+.breadcrumbs {
+	margin: 10px auto;
+}
+
+.item-wpanels {
+    display: inline-block;
+    margin-right: 100px;
+    margin-bottom: 30px;
+    width: 100px;
+    text-align: center;
+}
+
+.item-wpanels:nth-child(6n) {
+	margin-right: 0;
+}
+
+.item-wpanels .name {
+    font-family: 'Roboto Condensed', sans-serif, 'Arial', sans-serif;
+	font-size: 16px;
+    line-height: 18px;
+}
+
+@media only screen and (max-width: 1140px), only screen and (max-device-width: 1140px) and (orientation: landscape) {
+    
+    .list-wpanels {
+	text-align: center;
+}
+    
+    .item-wpanels {
+	margin: 10px;
+    }
+    
+    .item-wpanels:nth-child(6n) {
+    margin-right: 10px;
+    }
+}

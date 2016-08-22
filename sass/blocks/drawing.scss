@@ -1,0 +1,55 @@
+.drawing {
+	background: #fff url("../img/bg/page-drafts-bg.png") -120px -65px no-repeat;
+}
+
+.center .breadcrumbs {
+    padding-top: 10px;
+	margin-bottom: 35px;
+}
+
+.description p {
+    margin-bottom: 35px;
+	font-family: 'HelveticaNeueCyr-Roman';
+    font-size: 15px;
+    line-height: 27px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.item-draft {
+    display: inline-block;
+    margin-right: 29px;
+    margin-bottom: 30px;
+    width: 163px;
+    text-align: center;
+}
+
+.item-draft img {
+	box-shadow: 0 3px 20px 0px #e0dcdc;
+}
+
+.item-draft:nth-child(6n) {
+    margin-right: 0;
+}
+
+.item-draft .name {
+    padding: 15px 5px;
+	font-family: 'HelveticaNeueCyr-Bold';
+    font-size: 16px;
+    line-height: 18px;
+}
+
+@media only screen and (max-width: 1140px), only screen and (max-device-width: 1140px) and (orientation: landscape) {
+    
+    .list-drafts {
+	text-align: center;
+}
+    
+    .item-draft {
+	margin: 10px;
+    }
+    
+    .item-draft:nth-child(6n) {
+    margin-right: 10px;
+    }
+}

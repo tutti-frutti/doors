@@ -1,28 +1,93 @@
 .choice {
-	background: #fff url("../img/bg/page-help-bg.png") 0 0 no-repeat;
+	background: #fff url("../img/bg/page-help-bg.png") -70px 0 no-repeat;
 }
 
-.art-img {
+.choice .breadcrumbs {
+	margin-bottom: 0px;
+}
+
+.article-img {
+    position: relative;
 	float: left;
     margin-right: 35px;
-//    border: 3px solid rgba(173, 190, 202 .5);
-//    box-shadow: inset 0 0 0 5px black;
+    max-width: 360px;
+    max-height: 250px;
 }
 
-.border {
-    background: #000;
-}
-
-.art-img img {
-//	border: 5px solid rgba(255, 273, 255, 0.3);
-//    border: 5px solid rgba(173, 190, 202, .3);
-    
-}
-
-article p {
+article p,
+.advice-list li,
+.decor-list li,
+.text-bottom {
     font-family: 'HelveticaNeueCyr-Roman';
     font-size: 15px;
     line-height: 27px;
     font-weight: normal;
+}
+
+.advice-list {
+    padding-left: 60px;
+    list-style-image: url("../img/chevron-right.png");
+    list-style-position: outside;
+}
+
+.advice-list li {
+    margin-bottom: 25px;
+    padding-left: 15px;
+}
+
+.sub-title {
+	color: #345d7d;
+    font-size: 28px;
+    line-height: 30px;
+}
+
+.decor-list {
+    padding-left: 10px;
+	counter-reset: myCounter;
+    list-style: outside;
+}
+
+.decor-list li {
+    position: relative;
+    margin-bottom: 25px;
+    padding-left: 64px;
+    list-style: none;
+}
+
+.decor-list li::before {
+    position: absolute;
+    left: 40px;
+    counter-increment: myCounter;
+    content:counter(myCounter);
+    color: #345d7d;
+    display: inline-block;
+    text-align: center;
+    font-family: "HelveticaNeueCyr-Bold";
+    font-size: 22px;
+}
+
+.text-bottom {
+	display: block;
+    margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) and (orientation: landscape) {
     
+    .article-img {
+        margin: 0 auto;
+    }
+    
+    article p {
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 768px), only screen and (max-device-width: 1023px) and (orientation: landscape) {
+    article p,
+    .sub-title,
+    .text-bottom,
+    .article-img,
+    .choice .breadcrumbs {
+        padding: 0 10px;
+    }
 }

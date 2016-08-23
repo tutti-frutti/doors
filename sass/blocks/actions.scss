@@ -1,0 +1,54 @@
+.actions {
+	background: #fff;
+}
+
+.action-item {
+    min-height: 325px;
+	background: #f1f1f1;
+}
+
+.item-wrapper {
+	width: 1140px;
+    margin: 0px auto;
+    font-size: 14px;    
+}
+
+.action-title {
+    font-family:'Roboto Condensed';
+	font-size: 24px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #345d7d;
+}
+
+.actions-list {
+	font-size: 0;
+}
+
+.thumb {
+    display: inline-block;
+	width: 23%;
+    margin-right: 2%;
+    height: 275px;
+    text-align: center;
+    border: 1px solid #dae3ea;
+    background: #fff;
+}
+
+.thumb img {
+    margin-top: 18px;
+}
+
+.action-wrapper {
+    display: inline-block;
+	width: 74%;
+    vertical-align: top;
+}
+.a-title {
+	font-size: 14px;
+}
+.action-1,
+.action-2,
+.action-3 {
+    display: inline-block;
+}

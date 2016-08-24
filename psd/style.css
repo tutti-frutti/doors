@@ -161,7 +161,7 @@ article p,
   background: #f1f1f1; }
 
 .item-wrapper {
-  width: 1140px;
+  max-width: 1140px;
   margin: 0px auto;
   font-size: 14px; }
 
@@ -198,7 +198,8 @@ article p,
 .action-1,
 .action-2,
 .action-3 {
-  display: inline-block; }
+  display: inline-block;
+  vertical-align: top; }
 
 body {
   color: red; }

@@ -1,39 +1,141 @@
 .letter-dir {
-	background: url("../img/bg/letter-director-bg.jpg") 0 0 no-repeat;
+	background: url("../img/bg/letter-director-bg.jpg") -125px 0 no-repeat;
+    background-size: cover;
 }
 
 .left-column,
 .right-column {
     display: inline-block;
 	width: 32%;
+    vertical-align: top;
+}
+
+.right-column {
+    margin-top: 120px;
 }
 
 .left-column {
+    margin-right: 20%;
     & input {
-        width: 100%;
-        font-family:'HelveticaNeueCyr';
+        width: 93%;
+        padding-left: 25px;
+//        font-family:'HelveticaNeueCyr';
         height: 50px;
         line-height: 50px;
-        padding-left: 30px;
+//        padding-left: 30px;
         font-size: 16px;
         color: #353535;
-        margin: 0 25px 25px 0;
+        margin: 0 0 25px 0;
         border-radius:3px;
         border: none;
     }
     & textarea {
-        width: 100%;
+        width: 93%;
         height: 220px;
+        padding-top: 15px;
+        padding-left: 25px;
         font-family:'HelveticaNeueCyr';
         font-size: 16px;
         color: #353535;
-        margin: 0 25px 25px 0;
+        margin: 0 0 25px 0;
         border-radius:3px;
         border: none;
         resize: none;
     }
-} 
+}
 
-.text-input {
-	
+.l-text {
+    width: 37%;
+    font-family: "HelveticaNeueCyr-Roman";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 22px;
+    line-height: 36px;
+}
+
+.right-column {
+    & input {
+        width: 93%;
+        padding-left: 25px;
+//        font-family:'HelveticaNeueCyr';
+        height: 50px;
+        line-height: 50px;
+//        padding-left: 30px;
+        font-size: 16px;
+        color: #353535;
+        margin: 0 0 25px 0;
+        border-radius:3px;
+        border: none;
+    }
+}
+
+
+//input icons
+
+.f-user {
+    background: #fff url("../img/input-user-icon.png") 5px 18px no-repeat;
+}
+
+.f-number {
+    background: #fff url("../img/input-number-icon.png") 5px 18px no-repeat;
+}
+
+.f-theme {
+    background: #fff url("../img/input-text-icon.png") 5px 18px no-repeat;
+}
+
+.f-message {
+    background: #fff url("../img/input-message-icon.png") 5px 18px no-repeat;
+}
+
+::-webkit-input-placeholder {
+    position: relative;
+//    padding-left: 25px;
+    &::before {
+        position: absolute;
+        content: '&reg;';
+        top: 0;
+        right: 0;
+    }
+}
+
+// right column
+
+.for-answer {
+    display: block;
+    margin-bottom: 35px;
+    font-family: "HelveticaNeueCyr-Roman";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.f-phone {
+    background: #fff url("../img/input-phone-icon.png") 5px 18px no-repeat;
+}
+
+.mail-input .f-mail {
+    margin-bottom: 10px;
+    background: #fff url("../img/input-mail-icon.png") 5px 20px no-repeat;
+}
+
+.required-inputs {
+    font-family: "HelveticaNeueCyr-Roman";
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: normal;
+    font-style: normal;
+}
+
+input.f-send {
+    width: 311px;
+    margin-top: 65px;
+    color: #fff;
+    box-shadow: 0 3px 15px 0 #bfbfbf;
+    background-image: linear-gradient(to bottom, #2d74aa, #335e7f);
+    &:hover {
+        box-shadow: 0 5px 20px 0 #949494;
+        background-image: linear-gradient(to bottom, #123d5c, #5996c4);
+    }
 }

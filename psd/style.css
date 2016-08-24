@@ -1,0 +1,207 @@
+.drawing {
+  background: #fff url("../img/bg/page-drafts-bg.png") -120px -65px no-repeat; }
+
+.center .breadcrumbs {
+  padding-top: 10px;
+  margin-bottom: 35px; }
+
+.description p {
+  margin-bottom: 35px;
+  font-family: 'HelveticaNeueCyr-Roman';
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: normal;
+  font-style: normal; }
+
+.item-draft {
+  display: inline-block;
+  margin-right: 29px;
+  margin-bottom: 30px;
+  width: 163px;
+  text-align: center; }
+
+.item-draft img {
+  box-shadow: 0 3px 20px 0px #e0dcdc; }
+
+.item-draft:nth-child(6n) {
+  margin-right: 0; }
+
+.item-draft .name {
+  padding: 15px 5px;
+  font-family: 'HelveticaNeueCyr-Bold';
+  font-size: 16px;
+  line-height: 18px; }
+
+@media only screen and (max-width: 1140px), only screen and (max-device-width: 1140px) and (orientation: landscape) {
+  .list-drafts {
+    text-align: center; }
+  .item-draft {
+    margin: 10px; }
+  .item-draft:nth-child(6n) {
+    margin-right: 10px; } }
+
+.wood-panel {
+  background: #fff url("../img/bg/wood-panel-bg.jpg") 0 0 no-repeat;
+  background-size: cover; }
+
+.breadcrumbs {
+  margin: 10px auto; }
+
+.item-wpanels {
+  display: inline-block;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  width: 100px;
+  text-align: center; }
+
+.item-wpanels:nth-child(6n) {
+  margin-right: 0; }
+
+.item-wpanels .name {
+  font-family: 'Roboto Condensed', sans-serif, 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 18px; }
+
+@media only screen and (max-width: 1140px), only screen and (max-device-width: 1140px) and (orientation: landscape) {
+  .list-wpanels {
+    text-align: center; }
+  .item-wpanels {
+    margin: 10px; }
+  .item-wpanels:nth-child(6n) {
+    margin-right: 10px; } }
+
+.choice {
+  background: #fff url("../img/bg/page-help-bg.png") -70px 0 no-repeat; }
+
+.choice .breadcrumbs {
+  margin-bottom: 0px; }
+
+.article-img {
+  position: relative;
+  float: left;
+  margin-right: 35px;
+  max-width: 360px;
+  max-height: 250px; }
+
+article p,
+.advice-list li,
+.decor-list li,
+.text-bottom {
+  font-family: 'HelveticaNeueCyr-Roman';
+  font-size: 15px;
+  line-height: 27px;
+  font-weight: normal; }
+
+.advice-list {
+  padding-left: 60px;
+  list-style-image: url("../img/chevron-right.png");
+  list-style-position: outside; }
+
+.advice-list li {
+  margin-bottom: 25px;
+  padding-left: 15px; }
+
+.sub-title {
+  color: #345d7d;
+  font-size: 28px;
+  line-height: 30px; }
+
+.decor-list {
+  padding-left: 10px;
+  counter-reset: myCounter;
+  list-style: outside; }
+
+.decor-list li {
+  position: relative;
+  margin-bottom: 25px;
+  padding-left: 64px;
+  list-style: none; }
+
+.decor-list li::before {
+  position: absolute;
+  left: 40px;
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  color: #345d7d;
+  display: inline-block;
+  text-align: center;
+  font-family: "HelveticaNeueCyr-Bold";
+  font-size: 22px; }
+
+.text-bottom {
+  display: block;
+  margin-bottom: 30px; }
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) and (orientation: landscape) {
+  .article-img {
+    margin: 0 auto; }
+  article p {
+    padding: 0 10px; } }
+
+@media only screen and (min-width: 768px), only screen and (max-device-width: 1023px) and (orientation: landscape) {
+  article p,
+  .sub-title,
+  .text-bottom,
+  .article-img,
+  .choice .breadcrumbs {
+    padding: 0 10px; } }
+
+.measure {
+  background: #fff url("../img/bg/page-drafts-bg.png") -121px -65px no-repeat; }
+
+.measure .breadcrumbs {
+  padding-top: 15px;
+  margin-top: 0; }
+
+.actions {
+  background: #fff; }
+
+.action-item {
+  min-height: 325px;
+  background: #f1f1f1; }
+
+.item-wrapper {
+  width: 1140px;
+  margin: 0px auto;
+  font-size: 14px; }
+
+.action-title {
+  font-family: 'Roboto Condensed';
+  font-size: 24px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #345d7d; }
+
+.actions-list {
+  font-size: 0; }
+
+.thumb {
+  display: inline-block;
+  width: 23%;
+  margin-right: 2%;
+  height: 275px;
+  text-align: center;
+  border: 1px solid #dae3ea;
+  background: #fff; }
+
+.thumb img {
+  margin-top: 18px; }
+
+.action-wrapper {
+  display: inline-block;
+  width: 74%;
+  vertical-align: top; }
+
+.a-title {
+  font-size: 14px; }
+
+.action-1,
+.action-2,
+.action-3 {
+  display: inline-block; }
+
+body {
+  color: red; }
+
+.sub-title {
+  display: block; }

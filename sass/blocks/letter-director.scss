@@ -1,6 +1,20 @@
+.letter-dir .breadcrumbs {
+	margin: 5px 0;
+    padding: 0;
+}
+
+.letter-dir .infoblock-title {
+    padding-top: 27px;
+}
+
+.letter-wrapper {
+    padding-top: 30px;
+    padding-bottom: 170px;
+}
+
 .letter-dir {
-	background: url("../img/bg/letter-director-bg.jpg") -125px 0 no-repeat;
-    background-size: cover;
+	background: url("../img/bg/letter-director-bg.jpg") -120px 24px no-repeat;
+//    background-size: cover;
 }
 
 .left-column,
@@ -130,12 +144,71 @@
 
 input.f-send {
     width: 311px;
-    margin-top: 65px;
+    margin-top: 60px;
     color: #fff;
     box-shadow: 0 3px 15px 0 #bfbfbf;
     background-image: linear-gradient(to bottom, #2d74aa, #335e7f);
     &:hover {
         box-shadow: 0 5px 20px 0 #949494;
         background-image: linear-gradient(to bottom, #123d5c, #5996c4);
+    }
+}
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) and (orientation: landscape) {
+    .left-column,
+    .right-column {
+        display: block;
+	    width: 100%;
+        margin-right: 0;
+    }
+    
+    .right-column {
+	    margin-top: 20px;
+}
+    
+    .l-text {
+        width: 100%;
+    }
+    
+    .letter-dir {
+        background-size: cover;
+    }
+    
+    .letter-wrapper {
+	    width: 90%;
+        margin: 0 auto;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    
+    input.f-send {
+        width: auto;
+        margin-top: 10px;
+        padding: 0 10px;
+//        text-align: center;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .letter-wrapper {
+	    width: 90%;
+        margin: 0 auto;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    
+    .letter-dir {
+        background-size: cover;
+    }
+    
+    .l-text {
+        width: 100%;
+    }
+    
+    .left-column,
+    .right-column {
+	    width: 80%;
+        margin-top: 10px;
+        margin-right: 0;
     }
 }

@@ -1,5 +1,15 @@
+.contacts .breadcrumbs {
+    margin: 0px;
+}
+
+.contacts .infoblock-title {
+    padding-top: 10px;
+    padding-bottom: 40px;
+}
+
 .contacts-top {
 	text-align: center;
+    margin-bottom: 40px;
 }
 
 .c-phones,
@@ -11,7 +21,7 @@
     display: inline-block;
 	width: 245px;
     height: 215px;
-    margin-right: 40px;
+    margin-right: 3%;
     text-align: left;
     vertical-align: top;
     background-image: linear-gradient(to bottom, #ebf1f5, #d0d8dc);
@@ -158,6 +168,10 @@
 	margin-bottom: 23px;
 }
 
+.contacts-bottom {
+    margin-bottom: 60px;    
+}
+
 // requisites
 
 .requisites {
@@ -203,12 +217,13 @@
 .c-map {
     position: relative;
 	display: inline-block;
-    padding: 5px;
+    padding: 4px;
     width: 74%;
-    min-height: 358px;
+//    min-height: 352px;
     vertical-align: top;
     border: 2px solid #335d7c;
     box-sizing: border-box;
+    background: #f6f6f6;
 }
 
 .c-address {
@@ -241,6 +256,43 @@
     color: #315877;
 }
 
-iframe {
-    max-width: 842px;
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) and (orientation: landscape) {
+    .c-phones,
+    .c-mail,
+    .c-hours,
+    .c-service {
+        margin: 10px 0;
+    }
+    
+    .requisites {
+        display: block;
+        margin: 0 auto;
+        width: 90%;
+    }
+    
+    .c-map {
+        display: block;
+        margin: 240px auto 10px;
+        width: 90%;
+    }
+    
+    .c-address {
+        top: -230px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .c-phones,
+    .c-mail,
+    .c-hours,
+    .c-service {
+        margin: 20px;
+    }
+    
+    .requisites,
+    .c-map {
+        display: block;
+        width: 90%;
+        margin: 10px auto;
+}
 }

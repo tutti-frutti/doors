@@ -1,4 +1,5 @@
 .furniture {
+    background: url("../img/bg/furniture-bg.png") -129px 0 no-repeat;
     &-list {
         text-align: center;
         font-size: 0;
@@ -23,18 +24,22 @@
     position: absolute;
     bottom: 10px;
     left: 20px;
-}
-
-.square {
-    position: relative;
     &::before {
         position: absolute;
         content: '';
-        top: -14px;
-        left: 18px;
+        top: 10px;
+        left: -13px;
         width: 5px;
         height: 5px;
         background: url("../img/furniture/f-ic-square.png") 0 0 no-repeat;
+    }
+    & > a {
+        font-size: 22px;
+        color: #335d7c;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -115,11 +120,21 @@
         }
     }
     &-title {
+        position: relative;
         margin: 10px 0;
         font-size: 24px;
         line-height: 30px;
         color: #345d7d;
         text-transform: uppercase;
+        &::before {
+            position: absolute;
+            content: '';
+            top: 30px;
+            left: 0px;
+            width: 26px;
+            height: 4px;
+            background: url("../img/furniture/f-title.png") 0 0 no-repeat;
+        }
     }
 }
 
@@ -131,6 +146,7 @@
 
 .goods- {
     &list {
+        margin-bottom: 50px;
         text-align: center;
     }
     &item {
@@ -169,4 +185,90 @@
     }
     }
     
+}
+
+@media only screen and (max-width: 767px), only screen and (max-device-width: 767px) and (orientation: landscape) {
+    .furniture-{
+        &items {
+            &::before {
+                left: 0;
+                background: none;
+            }
+            &::after {
+                right: 0;
+                background: none;
+            }
+        }
+        &item {
+        margin: 15px;
+        &:nth-child(4n) {
+            margin-right: 15px;
+        }
+    }
+        &filter {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        &all {
+            margin-bottom: 50px;
+            margin-right: 0;
+        }
+        &title {
+        &::before {
+            left: 50%;
+            margin-left: -13px;
+        }
+    }
+}
+ 
+.furniture-filter + .description {
+    padding: 10px;
+    text-align: center;
+    }
+    .goods-item {
+	    margin-right: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px) {
+    .furniture- {
+        &item {
+        margin: 15px;
+        &:nth-child(4n) {
+            margin-right: 15px;
+        }
+    }
+        &items {
+            &::before {
+                left: 0;
+                background: none;
+            }
+            &::after {
+                right: 0;
+                background: none;
+            }
+}
+        &btn {
+            font-size: 12px;
+        }
+        &filter {
+            margin: 30px 0;
+        }
+        &all {
+            margin-right: 0;
+            margin-bottom: 50px;
+        }
+
+}
+    .furniture-filter + .description {
+    padding: 10px;
+//    text-align: center;
+    }
+    
+    .goods-item {
+	    margin: 10px;
+        &:nth-child(4n) {
+            margin: 10px;
+        }
+    }
 }

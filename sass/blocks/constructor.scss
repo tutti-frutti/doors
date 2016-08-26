@@ -1,0 +1,154 @@
+.constructor- {
+    background: url("../img/constr/constr-bg.jpg") 0 0 no-repeat;
+    &wrapper {
+        text-align: center;
+        max-width: 890px;
+        margin: 0 auto;
+        padding: 5px;
+        border: 2px solid #315877;
+    }
+    &left {
+        display: inline-block;
+        max-width: 445px;
+        width: 100%;
+        font-size: 0;
+        border-top: 1px solid transparent;
+        background: url("../img/constr/c-bg-left.jpg") 0 0 no-repeat;
+    }
+    &right {
+        display: inline-block;
+        max-width: 445px;
+        width: 100%;
+        font-size: 0;
+        margin-left: -4px;
+        border-top: 1px solid transparent;
+        background: url("../img/constr/c-bg-right.jpg") 0 0 no-repeat;
+    }
+    &plat {
+        position: relative;
+        &:hover {
+            opacity: .75;
+        }
+    }
+    &processing {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        &:hover {
+            opacity: .75;
+        }
+    }
+    &item {
+        position: relative;
+        margin-bottom: 25px;
+        list-style: none;
+        background: rgba(235, 235, 235, .7);
+        &::before {
+            position: absolute;
+            content: '';
+            left: -6px;
+            bottom: 50%;
+            margin-bottom: -8px;
+            width: 8px;
+            height: 16px;
+            background: url("../img/constr/arr-left.png") 0 0 no-repeat;
+        }
+        & > .title-upper {
+            padding: 5px 0;
+            line-height: 16px;
+        }
+        & > .constr-descr {
+            line-height: 23px;
+        }
+        & > .title-low {
+            padding-bottom: 5px;
+            line-height: 16px;
+        }
+      }
+    
+    &door {
+        display: inline-block;
+        margin-left: 25.5%;
+    }
+    &list {
+        margin-left: 7%;
+        display: inline-block;
+        vertical-align: top;
+        width: 82px;
+        text-align: center;
+    }
+    &top {
+        margin-left: 9%;
+        margin-top: 62px;
+    }
+    &type {
+        margin-right: 9%;
+        margin-left: 13px;
+    }
+    &type,
+    &group {
+        position: relative;
+        display: inline-block;
+        width: 170px;
+        height: 35px;
+        margin-bottom: 50px;
+        text-align: center;
+        vertical-align: top;
+        background: rgba(235, 235, 235, .7);
+        &::before {
+            position: absolute;
+            content: '';
+            left: 50%;
+            bottom: -6px;
+            margin-left: -8px;
+            width: 16px;
+            height: 8px;
+            background: url(../img/constr/arr-down.png) 0 0 no-repeat;
+        }
+    }
+}
+
+.constr-thumb {
+	display: block;
+    margin: 0 auto;
+}
+
+.title-low {
+	margin: 0;
+    padding-top: 8px;
+    font-size: 14px;
+    line-height: 6px;
+    color: #221d1d;
+}
+
+.title-upper {
+    margin: 0;
+    margin-top: 8px;
+	font-size: 14px;
+    line-height: 6px;
+    text-transform: uppercase;
+}
+
+.constr-descr {
+    font-size: 11px;
+    color: #221d1d;
+}
+
+.btn-constr {
+    display: block;
+    margin: 20px auto;
+    width: 167px;
+    height: 50px;
+    font-family: "HelveticaNeueCyr-Roman";
+    font-size: 20px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 0 27px 5px #c8c8c8;
+    background-image: linear-gradient(to bottom, #2d73aa, #335f80);
+    &:hover {
+        background-image: linear-gradient(to bottom, #335f80,  #2d73aa);
+    }
+}

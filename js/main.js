@@ -114,3 +114,9 @@ $(document).ready(function(){
 
 
 });
+
+$("#zoom-sm").elevateZoom({
+     zoomType: "lens",
+    lensShape : "round",
+    scrollZoom : true
+});

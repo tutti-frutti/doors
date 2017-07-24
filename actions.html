@@ -10,10 +10,14 @@
 <!-- Style + Fonts + JS -->
 <link rel="stylesheet" href="css/style-prev.css" type="text/css" media="screen" />
 <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+
 <link rel="stylesheet" href="css/font-awesome.css">
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="css/style.css">
+
+<!--Zoom-->
+<script type="text/javascript" src="js/elevatezoom-master/elevatezoom-master/jquery.elevatezoom.js" ></script>
 
 <!-- Slider -->
 <link href="css/jquery.bxslider.css" rel="stylesheet" />
@@ -29,7 +33,7 @@
 <!-- Filter -->
 <script src="js/jquery.mixitup.min.js"></script>
 
-<script src="js/main.js"></script>
+
 
 </head>
 
@@ -168,7 +172,7 @@
         <ul class="actions-list">
             <li class="action-item">
             <div class="item-wrapper">
-                <div class="thumb-2"><img src="img/actions-door-3.png" alt="Акция">
+                <div class="thumb-2"><img id="zoom-sm" src="img/actions-door-3.png" alt="Акция" data-zoom-image="img/actions-door-3-zoom.png">
                 </div>
             <div class="action-wrapper-2">
                 <h3 class="action-title">Если вы закажите у нас любые три двери с монтажем &quot;дс-3&quot;</h3>
@@ -263,6 +267,6 @@
 	<div id="scroller">Наверх</div>
 </div>
 -->
-
+<script src="js/main.js"></script>
 </body>
 </html>
